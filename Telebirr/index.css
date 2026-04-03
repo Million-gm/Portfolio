@@ -1,0 +1,85 @@
+
+body{
+background: linear-gradient(35deg,rgb(45, 155, 228),rgb(27, 71, 82),rgb(9, 180, 231));
+
+}
+.heading{
+    height:10%; 
+    width: 100%;
+    justify-self: center;
+}
+.comp-name{
+justify-self: center;
+background: linear-gradient(45deg,rgb(206, 161, 161),rgb(226, 206, 176),rgb(199, 199, 235),rgb(203, 219, 203),pink,white, yellow);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-variant:small-caps;
+font-size: 4em;
+}
+.loghead{
+    justify-self: center;
+    font-size: 5em;
+    /* background-color: lineargradient(red,yellow,cyan,30deg); */
+background-color: aqua;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-variant-caps: all-petite-caps;
+}
+.loginform{
+    background-color: #092686;
+    padding: 5em;
+    padding-top: 0em;
+    /* align-self: center;  */
+    justify-self: center;
+
+}
+.infield{
+    display: block;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+.allone{
+    border: 1px solid rgb(14, 64, 202);
+    box-shadow: #1237db 0px -10px 20px, #2518d3 0px 11px 32px;}
+label{
+    background:linear-gradient(30deg,rgb(199, 216, 199),rgb(97, 243, 187),rgb(224, 200, 228));
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(to right, #376af7, #3af133); */
+    text-align: right;
+    margin: 0.5em;
+    font-size: 1.5em;
+    font-variant-caps: small-caps;
+}
+.three{
+    justify-self: center;
+}
+.submit{
+    font-size: 2em;
+    padding: 0.3em 0.05em;
+    background: linear-gradient(35deg,rgb(171, 238, 235),rgb(245, 131, 194),rgb(241, 143, 245));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-variant: small-caps;
+}
+.submit:hover{
+    background:rgb(69, 72, 233);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input{
+    border: 0px red solid;
+    border-bottom: 2px rgb(48, 41, 41) solid;
+    height: 30px;
+    border: radius 3px;
+    width: 65%;
+    align-self: center;
+}
+input:focus{
+    border: 0px white dashed;
+    border-bottom: 3px rgb(2, 7, 7) solid;
+}
+
+

@@ -1,0 +1,144 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+<script>
+
+    <!-- JavaScript for mobile navigation toggle -->
+    document.addEventListener('DOMContentLoaded', function () {
+        const ham = document.querySelector('.ham');
+        const mobileNav = document.querySelector('.mobile_nav');
+// opening hambuerger menu
+        ham.addEventListener('click', function () {
+            mobileNav.classList.toggle('active');
+        });
+        document.querySelectorAll(".mobile_nav_list a").forEach(n => n.addEventListener("click", () => {
+            // mobileNav.classList.remove("active");
+            mobileNav.classList.remove("active");
+        }));
+    });
+    
+</script>
+</head>
+<header>
+    <nav class="nav">
+        <ul>
+            <li><img class="img_badge" src="src/profile_img.png" alt="my profile image"></li>
+            <li><a href="#home" class="nav-link ">Home</a></li>
+            <li><a href="#about" class="nav-link ">About</a></li>
+            <li><a href="#contact" class="nav-link ">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="mobile_nav_toggle">
+        <i class="fas fa-bars ham"></i>
+    </button>
+    <nav class="mobile_nav">
+        <ul class="mobile_nav_list">
+            <li><img class="img_badge" src="src/profile_img.png" alt="my profile image"></li>
+            <li><a href="#home" class="nav-link nav_mobile hm ">Home</a></li>
+            <li><a href="#about" class="nav-link nav_mobile">About</a></li>
+            <li><a href="#contact" class="nav-link nav_mobile">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- <div class="nav">
+        <ul>
+            <li><img class="img_badge" src="src/profile_img.png" alt="my profile image"></li>
+            <li><a href="index.html " class="nav-link">Home</a></li>
+            <li><a href="#about " class="nav-link">About</a></li>
+            <li><a href="#contact " class="nav-link">Contact</a></li>
+        </ul>
+    </div> -->
+    <!-- <div class="content"> -->
+    <section id="home" class="home-section content-section">
+
+        <div class="home_text">
+            <h1>million gebremedhin</h1>
+            <ul>
+                <li>Software Engineer</li>
+                <li>Web Developer</li>
+                <li>Tech Enthusiast</li>
+                <li>Graphics Designer</li>
+            </ul>
+        </div>
+
+        <img src="src/profile_img_nobg.png" class="home_image" alt="Home image">
+        <div class="home_image_overlay">
+
+        </div>
+
+
+    </section>
+    <section id="about" class="about-section content-section">
+        <h2>proffessional skills</h2>
+        <div class="card-holder">
+
+
+            <div class="card se">
+                <h3>Software Engineer</h3>
+                <p>I am a passionate software engineer with experience in developing scalable applications.</p>
+
+            </div>
+            <div class="card">
+                <h3>Web Developer</h3>
+                <p>I specialize in creating responsive and user-friendly websites using modern web technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Data analyst</h3>
+                <p>I have a strong background in data analysis and enjoy extracting insights from complex datasets.</p>
+            </div>
+
+            <div class="card">
+                <h3>Tech Enthusiast</h3>
+                <p>I love staying up-to-date with the latest trends and innovations in the tech industry.</p>
+            </div>
+            <div class="card">
+                <h3>Graphics Designer</h3>
+                <p>I have a keen eye for design and enjoy creating visually appealing graphics and layouts.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact" class="contact-section content-section">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/xwvwrrqe" method="post">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Your email address" required>
+            <label for="message">Message:</label>
+            <textarea placeholder="Your message" required rows="15" cols="40" class="message"></textarea>
+            <input type="submit" value="Send" class="send">
+        </form>
+
+    </section>
+    <!-- </div> -->
+    <!-- <div class="footer">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </div> -->
+</main>
+<footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/milion-gm" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/million-gebremedhin-015710160" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="facebook.com/milion.gebremedhin.79" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>    
+
+    
+
+    </footer>
+
+</html>
